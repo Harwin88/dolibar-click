@@ -12,8 +12,7 @@ services:
       MYSQL_PASSWORD: dolibarr_pass
     volumes:
       - db_data:/var/lib/mysql
-    # No exponemos puerto DB públicamente (mejor seguridad).
-    # Si necesitas acceso externo temporal, descomenta la siguiente línea:
+    # Si quieres acceder al MySQL remoto, descomenta:
     # ports:
     #   - "3307:3306"
 
@@ -28,8 +27,8 @@ services:
       DOLI_DB_PASSWORD: dolibarr_pass
     depends_on:
       - db
-    expose:
-      - "8080:80"
+    ports:
+      - "8080:80"   # <── AHORA SÍ PUBLICADO
     volumes:
       - ./htdocs:/var/www/html
       - ./documents:/var/www/documents
@@ -40,8 +39,8 @@ services:
     restart: always
     depends_on:
       - db
-    expose:
-      - "8080"
+    ports:
+      - "8081:8080"  # para poder abrir adminer desde el navegador
 
   caddy:
     image: caddy:latest
