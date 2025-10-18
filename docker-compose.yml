@@ -12,8 +12,10 @@ services:
       MYSQL_PASSWORD: dolibarr_pass
     volumes:
       - db_data:/var/lib/mysql
-    ports:
-      - "3307:3306"
+    # No exponemos puerto DB públicamente (mejor seguridad).
+    # Si necesitas acceso externo temporal, descomenta la siguiente línea:
+    # ports:
+    #   - "3307:3306"
 
   dolibarr:
     image: tuxgasy/dolibarr
@@ -26,20 +28,20 @@ services:
       DOLI_DB_PASSWORD: dolibarr_pass
     depends_on:
       - db
-    ports:
-      - "8080:80"
+    expose:
+      - "80"
     volumes:
       - ./htdocs:/var/www/html
       - ./documents:/var/www/documents
 
   adminer:
-    image: adminer
+    image: adminer:latest
     container_name: dolibarr_adminer
     restart: always
     depends_on:
       - db
-    ports:
-      - "8081:8080"
+    expose:
+      - "8080"
 
   caddy:
     image: caddy:latest
@@ -49,11 +51,12 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
       - caddy_config:/config
     depends_on:
       - dolibarr
+      - adminer
 
 volumes:
   db_data:

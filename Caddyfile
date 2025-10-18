@@ -1,0 +1,16 @@
+erpgh.duckdns.org {
+    reverse_proxy dolibarr:80
+    encode gzip
+    header {
+        # Buenas prácticas básicas
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    }
+}
+
+db.erpgh.duckdns.org {
+    reverse_proxy adminer:8080
+    encode gzip
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    }
+}
