@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_facture_fourn_extrafields ADD UNIQUE INDEX uk_facture_fourn_extrafields (fk_object);

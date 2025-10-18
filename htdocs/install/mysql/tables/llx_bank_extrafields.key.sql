@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_bank_extrafields ADD UNIQUE INDEX uk_bank_extrafields (fk_object);

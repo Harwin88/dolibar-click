@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_projet_extrafields ADD UNIQUE INDEX uk_projet_extrafields (fk_object);

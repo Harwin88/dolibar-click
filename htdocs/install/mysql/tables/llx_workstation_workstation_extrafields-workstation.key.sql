@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_workstation_workstation_extrafields ADD INDEX idx_workstation_workstation_extrafields (fk_object);

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_pos_cash_fence_extrafields ADD UNIQUE INDEX uk_pos_cash_fence_extrafields (fk_object);

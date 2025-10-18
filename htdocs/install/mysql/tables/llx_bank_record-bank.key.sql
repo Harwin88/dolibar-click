@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_bank_record ADD CONSTRAINT bank_record_fk_bank FOREIGN KEY (fk_bank) REFERENCES llx_bank_account (rowid);

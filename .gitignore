@@ -1,0 +1,40 @@
+# Dolibarr project - ignore runtime files, credentials and editor/OS files
+
+# Dolibarr config and data
+/htdocs/conf/conf.php
+/htdocs/documents/
+/htdocs/htdocs/documents/*
+
+# Installer/upgrade locks
+/htdocs/install/install.lock
+/htdocs/documents/install.lock
+
+# PHP & system
+/vendor/
+/node_modules/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Docker related
+/db_data/
+/docker-compose.override.yml
+
+# Logs and tmp
+/logs/
+/tmp/
+
+# Keys and secrets
+*.key
+*.pem
+*.crt
+*.secret
+
+# Composer
+/composer.lock
+
+# Windows
+desktop.ini

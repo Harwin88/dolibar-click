@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_menu ADD INDEX idx_menu_menuhandler_type (menu_handler, type);
+
+

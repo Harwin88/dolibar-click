@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_fichinterdet_extrafields ADD UNIQUE INDEX uk_ficheinterdet_extrafields (fk_object);

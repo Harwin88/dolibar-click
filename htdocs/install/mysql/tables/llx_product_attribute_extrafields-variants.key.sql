@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_product_attribute_extrafields ADD INDEX idx_product_attribute_extrafields (fk_object);

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_deliverydet_extrafields ADD UNIQUE INDEX uk_deliverydet_extrafields (fk_object);

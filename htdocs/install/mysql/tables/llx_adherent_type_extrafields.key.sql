@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_adherent_type_extrafields ADD UNIQUE INDEX uk_adherent_type_extrafields (fk_object);

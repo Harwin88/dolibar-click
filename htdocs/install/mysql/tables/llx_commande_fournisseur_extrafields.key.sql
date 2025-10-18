@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_commande_fournisseur_extrafields ADD UNIQUE INDEX uk_commande_fournisseur_extrafields (fk_object);

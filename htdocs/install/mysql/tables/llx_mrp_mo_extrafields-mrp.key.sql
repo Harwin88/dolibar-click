@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_mrp_mo_extrafields ADD UNIQUE INDEX uk_mrp_mo_fk_object (fk_object);
+

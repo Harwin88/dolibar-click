@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_actioncomm_extrafields ADD UNIQUE INDEX uk_actioncomm_extrafields (fk_object);

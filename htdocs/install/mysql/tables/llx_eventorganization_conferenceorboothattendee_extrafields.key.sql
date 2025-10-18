@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_eventorganization_conferenceorboothattendee_extrafields ADD UNIQUE INDEX uk_conferenceorboothattendee_fk_object (fk_object);
+

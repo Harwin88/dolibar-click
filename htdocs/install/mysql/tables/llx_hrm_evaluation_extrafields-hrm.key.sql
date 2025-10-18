@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_hrm_evaluation_extrafields ADD UNIQUE INDEX uk_evaluation_fk_object (fk_object);
+

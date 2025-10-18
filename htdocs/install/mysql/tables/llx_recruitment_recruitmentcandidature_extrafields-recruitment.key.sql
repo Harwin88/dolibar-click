@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_recruitment_recruitmentcandidature_extrafields ADD UNIQUE INDEX uk_recruitmentcandidature_fk_object (fk_object);
+

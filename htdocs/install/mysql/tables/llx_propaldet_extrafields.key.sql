@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_propaldet_extrafields ADD UNIQUE INDEX uk_propaldet_extrafields (fk_object);

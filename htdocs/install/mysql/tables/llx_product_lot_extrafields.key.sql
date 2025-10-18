@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_product_lot_extrafields ADD UNIQUE INDEX uk_product_lot_extrafields (fk_object);
+

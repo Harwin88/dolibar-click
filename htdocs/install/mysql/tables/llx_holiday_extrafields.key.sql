@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE llx_holiday_extrafields ADD UNIQUE INDEX uk_holiday_extrafields (fk_object);
+
