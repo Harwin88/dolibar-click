@@ -1,7 +1,7 @@
 # Dolibarr project - ignore runtime files, credentials and editor/OS files
 
 # Dolibarr config and data
-/htdocs/conf/conf.php
+
 /htdocs/documents/
 /htdocs/htdocs/documents/*
 
